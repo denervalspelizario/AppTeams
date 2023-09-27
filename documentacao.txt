@@ -1,0 +1,16 @@
+
+-- criar projeto
+-- limpar o projeto
+-- neste caso instalar style components comandos: 
+  npm instal styled-components
+  npm install --save-dev @types/styled-components @types/styled-components-react-native
+
+
+
+
+-- fazer estrutura de pastas
+
+-- fazer o babel module resolver instalando com o comando npm install --save-dev babel-plugin-module-resolver (opcional) para facilitar import de pastas
+   ajustar em babelconfig.js  e tsconfig.json 
+
+--   
