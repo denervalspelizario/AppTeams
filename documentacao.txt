@@ -2,7 +2,7 @@
 -- criar projeto
 -- limpar o projeto
 -- neste caso instalar style components comandos: 
-  npm instal styled-components
+  monpm instal styled-components
   npm install --save-dev @types/styled-components @types/styled-components-react-native
 
 
@@ -13,4 +13,8 @@
 -- fazer o babel module resolver instalando com o comando npm install --save-dev babel-plugin-module-resolver (opcional) para facilitar import de pastas
    ajustar em babelconfig.js  e tsconfig.json 
 
---   
+-- criar pasta theme e nele adicionar todas cores e fonts usadas no projeto e importa-lo para app.js e usa-lo para abraçar toda a estrutura  
+-- usando expo google font  importar fonte  instalando comando npx expo install expo-font @expo-google-fonts/nome-da-fonte 
+-- instalar biblioteca de icones neste caso sera a phosphor icons segue o link da biblioteca https://github.com/duongdev/phosphor-react-native
+-- instalar a a biblioteca para usar imagens svg no expo  comando é npx expo install react-native-svg
+-- criar  e estilizar o header 
