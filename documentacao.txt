@@ -4,7 +4,10 @@
 -- neste caso instalar style components comandos: 
   monpm instal styled-components
   npm install --save-dev @types/styled-components @types/styled-components-react-native
-
+-- indicar no package.json qual a tipagem vamos usar neste caso o comando vai ser 
+  "overrides": {
+    "@tipes/react": "~18.2.14"
+  },
 
 
 
@@ -17,4 +20,6 @@
 -- usando expo google font  importar fonte  instalando comando npx expo install expo-font @expo-google-fonts/nome-da-fonte 
 -- instalar biblioteca de icones neste caso sera a phosphor icons segue o link da biblioteca https://github.com/duongdev/phosphor-react-native
 -- instalar a a biblioteca para usar imagens svg no expo  comando é npx expo install react-native-svg
--- criar  e estilizar o header 
+-- criar  e estilizar o header, estilizar e importa-lo na screen group  
+-- criar component highlight, estilizar e importa-lo na screen group 
+-- Criar component GroupCard, estilizar e importa-lo na screen group
