@@ -23,3 +23,4 @@
 -- criar  e estilizar o header, estilizar e importa-lo na screen group  
 -- criar component highlight, estilizar e importa-lo na screen group 
 -- Criar component GroupCard, estilizar e importa-lo na screen group
+-- criar uma flatlist na screen groups que renderiza GroupCard
