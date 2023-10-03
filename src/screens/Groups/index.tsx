@@ -5,6 +5,7 @@ import { GroupCard } from '@components/GroupCard';
 import { useState } from 'react';
 import { FlatList } from 'react-native';
 import { ListEmpty } from '@components/ListEmpty';
+import { Button } from '@components/Button';
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>([]);  // state tipado como array de string
@@ -32,7 +33,9 @@ export function Groups() {
         )}
       />
 
-      
+      <Button 
+        title="Adicionar Equipe"
+      />
       
 
     </Container>

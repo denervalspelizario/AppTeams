@@ -24,3 +24,4 @@
 -- criar component highlight, estilizar e importa-lo na screen group 
 -- Criar component GroupCard, estilizar e importa-lo na screen group
 -- criar uma flatlist na screen groups que renderiza GroupCard
+-- criar commponent button que altera de cor de acordo com uma props passada e importar a screen groups

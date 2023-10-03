@@ -11,5 +11,5 @@ export function ListEmpty({message}: Props){
         {message}
       </Message>
     </Container>
-  )
+  );
 }
