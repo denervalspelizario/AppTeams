@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled, {css} from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 import { UsersThree } from "phosphor-react-native"; // icons que será estilizado
 
@@ -16,11 +16,17 @@ export const Container = styled(TouchableOpacity)`
   margin-bottom: 12px;
 `;
 
+
+
+//Desta forma importo o theme uma vez só - não esquecer de importar o css e se atentar a sintaxe
 export const Title = styled.Text`
-  font-size: ${({ theme }: { theme: any }) => theme.FONT_SIZE.MD}px;
-  font-family: ${({ theme }: { theme: any }) => theme.FONT_FAMILY.REGULAR};
-  color: ${({ theme }: { theme: any }) => theme.COLORS.GRAY_200};
+  ${({theme} : {theme: any}) => css`
+    font-size: ${theme.FONT_SIZE.MD}px;
+    font-family: ${theme.FONT_FAMILY.REGULAR};
+    color: ${theme.COLORS.GRAY_200}
+  `}
 `;
+
 
 export const Icon = styled(UsersThree).attrs(({theme} : {theme: any}) => ({
   size: 32,

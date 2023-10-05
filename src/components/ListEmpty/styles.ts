@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled, {css} from "styled-components/native";
 
 
 
@@ -10,9 +10,12 @@ export const Container = styled.View`
 
 export const Message = styled.Text`
   text-align: center;
-  font-size: ${({theme} : {theme : any}) => theme.FONT_SIZE.SM}px;
-  font-family: ${({theme} : {theme : any}) => theme.FONT_FAMILY.REGULAR};
-  color: ${({theme} : {theme : any}) => theme.COLORS.GRAY_300};
+  
+  ${({theme} : {theme: any}) => css`
+    font-size: ${theme.FONT_SIZE.SM}px;
+    font-family: ${theme.FONT_FAMILY.REGULAR};
+    color: ${theme.COLORS.GRAY_300};
+  `}
 
 `;
 

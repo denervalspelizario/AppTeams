@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled, {css} from "styled-components/native";
 import { TouchableOpacity } from "react-native";
 
 export type ButtonTypeStyleProps = 'PRIMARY' | 'SECONDARY'; // tipagem de estilo o primary será um estilo e secondary outro
@@ -19,10 +19,12 @@ export const Container = styled(TouchableOpacity)`
   align-items: center;
 `;
 
-
+//Desta forma importo o theme uma vez só - não esquecer de importar o css e se atentar a sintaxe
 export const Title = styled.Text`
-  font-size: ${({theme} : {theme : any}) => theme.FONT_SIZE.MD}px;
-  font-family: ${({theme} : {theme : any}) => theme.FONT_FAMILY.BOLD};
-  color: ${({theme} : {theme: any}) => theme.COLORS.WHITE}
+  ${({theme} : {theme: any}) =>css`
+    font-size: ${theme.FONT_SIZE.MD}px;
+    font-family: ${theme.FONT_FAMILY.BOLD};
+    color: ${theme.COLORS.WHITE}
+  `}
 `;
 
