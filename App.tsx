@@ -5,6 +5,7 @@ import { Loading } from './src/components/Loading';
 import { Groups } from '@screens/Groups';
 import { NewGroups } from '@screens/NewGroups';
 import theme from './src/theme'
+import { Players } from '@screens/Players';
 
 
 
@@ -19,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      { fonstLoaded ? <NewGroups /> : <Loading/> }
+      { fonstLoaded ? <Players /> : <Loading/> }
     </ThemeProvider>
   );
 }

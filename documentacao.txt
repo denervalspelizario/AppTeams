@@ -26,3 +26,5 @@
 -- criar uma flatlist na screen groups que renderiza GroupCard
 -- criar commponent button que altera de cor de acordo com uma props passada e importar a screen groups
 -- criar component input estilizar e adicionar em screen New Groups
+-- criar nova screen chamada Players, estiliza-la já adicionando os componentes que ela vai usar
+--
