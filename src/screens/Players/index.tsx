@@ -9,12 +9,14 @@ import { ButtonIcon } from '@components/ButtonIcon';
 import { Input } from '@components/Input';
 import { Filter } from '@components/Filter';
 import { PlayerCard } from '@components/PlayerCard';
+import { ListEmpty } from '@components/ListEmpty';
+import { Button } from '@components/Button';
 
 
 
 export function Players(){
   const [team, setTeam] = useState("Time A");
-  const [players, setPlayers] = useState(["Denerval", "Pedrão"]);
+  const [players, setPlayers] = useState(["Denerval", "Pedrão", "Tom", "Gabi", "Jessika", "Selma", "Amanda", "Pamela", "Joaquim", "Lucas"]);
   
   return(
     <Container>
@@ -69,7 +71,20 @@ export function Players(){
               onRemove={() => {}}
             />
           )}
-          
+
+          ListEmptyComponent={() => ( // component que será renderizado somente quando NÂO tiver nada para renderizar na state groups
+          <ListEmpty message="Que tal cadastrar uma turma?"/>
+        )}
+          showsVerticalScrollIndicator={false} // tirando a visibilidade de rolagem
+          contentContainerStyle={[  // estilizacao na unha do flatlist
+            {paddingBottom: 100},
+            players.length === 0 && {flex: 1} // se qtd de players for zero  entãoadicona o flex : 1
+          ]}
+        />
+
+        <Button 
+          title="Remover Turma"
+          type="SECONDARY"
         />
 
     </Container>

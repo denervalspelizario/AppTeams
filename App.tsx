@@ -20,7 +20,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      { fonstLoaded ? <Players /> : <Loading/> }
+      { fonstLoaded ? <Groups /> : <Loading/> }
     </ThemeProvider>
   );
 }
