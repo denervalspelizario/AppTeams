@@ -27,4 +27,11 @@
 -- criar commponent button que altera de cor de acordo com uma props passada e importar a screen groups
 -- criar component input estilizar e adicionar em screen New Groups
 -- criar nova screen chamada Players, estiliza-la já adicionando os componentes que ela vai usar
---
+  *** Etapa 1 instalar navegação que neste sera stack atravez da biblioteca react-navigation segue os comandos
+  npm install @react-navigation/native
+  *** Etapa 2  instalar as dependencias  segue os comandos
+  npx expo install react-native-screens react-native-safe-area-context
+  *** Etapa 3 agora fazer a estrategia de navegação instalar de fato a stack navigation segue o comando
+  npm install @react-navigation/native-stack
+-- criar as otas de navegação usando neste caso a stack navigation, criando uma pasta routes com arquivo app.routes nela ficara a estrutura de rotas
+-- dentro da pasta routes index.tsx será adicionando o contexto da navegação que abraça o AppRoutes e depois importa-lo para App.tsx
