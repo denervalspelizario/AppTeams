@@ -4,9 +4,16 @@ import { UsersThree } from 'phosphor-react-native';
 import { HighLight } from '@components/Highlight';
 import { Button } from '@components/Button';
 import { Input } from '@components/Input';
+import { useNavigation } from '@react-navigation/native';
 
 
 export function NewGroups() {
+
+  const navigation = useNavigation()
+
+  function handleNew(){
+    navigation.navigate('players', {group: 'Potatos'})
+  }
 
   return (
     <Container>
@@ -28,6 +35,7 @@ export function NewGroups() {
 
         <Button 
           title="Criar"
+          onPress={handleNew}
         />
       </Content>
     </Container>

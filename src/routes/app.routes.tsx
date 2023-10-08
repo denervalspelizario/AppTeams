@@ -23,7 +23,7 @@ export function AppRoutes(){
       />
 
       <Screen 
-        name="newgroup" 
+        name="newgroups" 
         component={NewGroups} 
       />
     </Navigator>

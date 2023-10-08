@@ -35,3 +35,4 @@
   npm install @react-navigation/native-stack
 -- criar as otas de navegação usando neste caso a stack navigation, criando uma pasta routes com arquivo app.routes nela ficara a estrutura de rotas
 -- dentro da pasta routes index.tsx será adicionando o contexto da navegação que abraça o AppRoutes e depois importa-lo para App.tsx
+-- agora na parte de usar a navegação vamos tipar a navegação criado um arquivo la em types e definir a tipagem  depois só pegar os btns da aplicacao e definir as navegaçoes

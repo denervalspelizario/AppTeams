@@ -1,14 +1,23 @@
-import { Header } from '@components/Header';
-import { Container } from './styles';
-import { HighLight } from '@components/Highlight';
-import { GroupCard } from '@components/GroupCard';
 import { useState } from 'react';
 import { FlatList } from 'react-native';
+import { useNavigation } from '@react-navigation/native' // pregando as propriedades de navegação
+import { Container } from './styles';
+
+
+import { Header } from '@components/Header';
+import { HighLight } from '@components/Highlight';
+import { GroupCard } from '@components/GroupCard';
 import { ListEmpty } from '@components/ListEmpty';
 import { Button } from '@components/Button';
 
 export function Groups() {
   const [groups, setGroups] = useState<string[]>([]);  // state tipado como array de string
+
+  const navigation = useNavigation(); // pegando as propriedades de navigate
+
+  function handleNewGroup(){
+    navigation.navigate('newgroups') // indicando para onde a r ota vai
+  }
 
   return (
     <Container>
@@ -35,6 +44,7 @@ export function Groups() {
 
       <Button 
         title="Adicionar Equipe"
+        onPress={handleNewGroup}
       />
       
 
